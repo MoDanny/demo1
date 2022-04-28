@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "Task-Database1",
+      "appliesTo": "Database1/",
+      "type": "launch"
+    }
+  ]
+}
