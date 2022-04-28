@@ -1,6 +1,2 @@
 # Hello World
-Added 123
-Something
-
-
-
+Dummy Project to learn git and github functionality.
