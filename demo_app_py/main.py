@@ -1,22 +1,20 @@
-min_to_sec = 2 * 5 * 6
-unit_of_measure = "seconds"
-print(3 * min_to_sec)
+calculation_to_units = 24
+name_of_unit = "hours"
 
 
-def minute_in_seconds(number_of_minutes):
-    if number_of_minutes > 0:
-        return f"Calculating {number_of_minutes} * {min_to_sec} -> {number_of_minutes * min_to_sec} {unit_of_measure}"
-    elif number_of_minutes == 0:
-        return "No Zero allowed"
+def days_to_units(num_of_days):
+    if num_of_days > 0:
+        return f"{num_of_days} days are {num_of_days * calculation_to_units} {name_of_unit}"
+    elif num_of_days == 0:
+        return "Zero (0) is not allowed"
 
 def validate_and_execute():
     if user_input.isdigit():
         user_input_number = int(user_input)
-        result = minute_in_seconds(user_input_number)
-        print(result)
+        calculated_value = days_to_units(user_input_number)
+        print(calculated_value)
     else:
-        print("meh!!!")
+        print("Invalid Input")
 
 user_input = input("Give me input:\n")
 validate_and_execute()
-
