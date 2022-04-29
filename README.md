@@ -1,7 +1,3 @@
 # Hello World
 
-Anpassung
-
-Commit?
-
-Was ein Pfusch
+- Directory demo_app_py -> Python
