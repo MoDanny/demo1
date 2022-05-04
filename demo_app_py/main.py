@@ -1,11 +1,5 @@
 calculation_to_units = 24
 name_of_unit = "hours"
-demo_list = ["abc", "xyz", "Omega"]
-element1 = demo_list[0]
-print (element1)
-print(demo_list[2])
-demo_list.append("Theta")
-print(demo_list)
 
 
 def days_to_units(num_of_days):
@@ -28,5 +22,9 @@ def validate_and_execute():
 user_input = ""
 while user_input != "exit":
     user_input = input("Give me input comma separated:\n")
-    for number_of_days_element in user_input.split(", "):
+    # set - liste mit diskreten elementen - list hat [] aber ein set hat {}
+    # list hat also eine Reihenfolge, set nicht. set ist eine Menge.
+    print(user_input.split(", "))
+    print(set(user_input.split(", ")))
+    for number_of_days_element in set(user_input.split(", ")):
         validate_and_execute()

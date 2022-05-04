@@ -1,6 +1,27 @@
-demo_list = ["abc", "xyz", "Omega"]
-element1 = demo_list[0]
-print (element1)
+demo_list = ["Omega", "abc", "xyz", "Omega"]
+element = demo_list[0]
+print(demo_list)
+print (element)
 print(demo_list[2])
 demo_list.append("Theta")
+demo_list.append("Epsilon")
 print(demo_list)
+demo_list.remove("Omega")
+print(demo_list)
+demo_list.remove("Omega")
+print(demo_list)
+
+print ("********************************************** Sets")
+demo_set = {"abc", "xyz", "Omega"}
+print (demo_set)
+
+for element in demo_set:
+    print(element)
+
+demo_set.add("Salbei")
+print (demo_set)
+try:
+    demo_set.remove("Omega")
+except KeyError:
+    print("notinlist")
+print (demo_set)
