@@ -25,3 +25,14 @@ try:
 except KeyError:
     print("notinlist")
 print (demo_set)
+
+print("Hallo Welt".replace("Welt", "Elch"))
+
+
+print ("********************************************** Dictionary")
+demo_dict = {"days":10,
+             "hours":4,
+             "Notb": 666}
+
+print(demo_dict)
+print(type(demo_dict))
